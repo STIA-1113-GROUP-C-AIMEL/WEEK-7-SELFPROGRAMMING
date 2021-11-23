@@ -1,0 +1,34 @@
+package myWhile;
+
+public class Noslide6 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// to declare
+		int i=1;
+		int j=10;
+		int k=20;
+		
+		
+	    while (i<5){
+	      System.out.print(i + " ");
+	      i++;   
+	    }
+	    System.out.println();
+	    while (j<20) {
+	    	System.out.print(j + " ");
+	    	j++;
+	    }
+	    System.out.println();
+	    while (k>10) {
+	    	System.out.print(k + " ");
+	    	k--;
+	    }
+	}
+
+}
+
+OUTPUT
+1 2 3 4 
+10 11 12 13 14 15 16 17 18 19 
+20 19 18 17 16 15 14 13 12 11 
