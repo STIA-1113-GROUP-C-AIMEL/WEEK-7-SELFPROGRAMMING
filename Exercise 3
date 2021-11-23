@@ -1,0 +1,24 @@
+package selfProgramming;
+
+public class Exercise3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// to declare
+		int i =0;
+		
+		do {
+			System.out.println(i + "");
+			i++;
+		}while (i<=5);
+	}
+
+}
+
+OUTPUT
+0
+1
+2
+3
+4
+5
