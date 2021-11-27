@@ -1,0 +1,85 @@
+package selfProgramming;
+
+import java.util.Scanner;
+
+public class Password {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// to declare
+		int i, no1, no2, id, password;
+		
+		
+		Scanner scan = new Scanner (System.in);
+		
+		System.out.println("----------------------------------------");
+		System.out.println("\tWelcome to PUBG Mobile");
+		System.out.println("----------------------------------------");
+		System.out.println();
+		
+		for(i=2; i>=0; i--) {
+			System.out.println("Enter your ID : ");
+			no1 = scan.nextInt();
+			id = 51248;
+			System.out.println("Enter your password :");
+			no2 = scan.nextInt();
+			password = 1445;
+			
+			if ((no1==id) && (no2==password)){
+				System.out.println("WELCOME TO PUBG");
+				System.out.println("Thank you. Enjoy the game!");
+				System.out.println("Don't forget to buy Royal Pass!");
+				break;
+			}
+			else if ((no1!=id ) && (no2!=password)){
+				System.out.println("Your ID and Password are incorrect.");
+				System.out.println("You only have "+ i+ " chance.");
+			}
+			else if (no1!=id ) {
+				System.out.println("Your ID is incorrect.");
+				System.out.println("You only have "+ i+ " chance.");
+			}
+			else if (no2!=password) {
+				System.out.println("You entered incorrect pasword.");
+				System.out.println("You only have "+ i+ " chance.");
+			}
+			if(i==0) {
+				System.out.println("Do not remember your ID ? Please click Forgot ID. ");
+				break;
+			}
+			else 
+				System.out.println("Please try again!");
+			
+			
+		}
+	}
+
+}
+
+OUTPUT
+
+----------------------------------------
+	Welcome to PUBG Mobile
+----------------------------------------
+
+Enter your ID : 
+51246
+Enter your password :
+1234
+Your ID and Password are incorrect.
+You only have 2 chance.
+Please try again!
+Enter your ID : 
+51248
+Enter your password :
+1234
+You entered incorrect pasword.
+You only have 1 chance.
+Please try again!
+Enter your ID : 
+51248
+Enter your password :
+1445
+WELCOME TO PUBG
+Thank you. Enjoy the game!
+Don't forget to buy Royal Pass!
